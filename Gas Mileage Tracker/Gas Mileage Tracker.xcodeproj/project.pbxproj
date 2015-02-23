@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29BD8B551A9BEA7800583744 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29BD8B541A9BEA7800583744 /* Images.xcassets */; };
+		29C9633E1A9555EF00D5F305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9633D1A9555EF00D5F305 /* AppDelegate.swift */; };
+		29C963401A9555EF00D5F305 /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9633F1A9555EF00D5F305 /* CalculationViewController.swift */; };
+		29C963421A9555EF00D5F305 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C963411A9555EF00D5F305 /* TrackerViewController.swift */; };
+		29C963451A9555EF00D5F305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C963431A9555EF00D5F305 /* Main.storyboard */; };
+		29C9634A1A9555EF00D5F305 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C963481A9555EF00D5F305 /* LaunchScreen.xib */; };
+		29C963561A9555EF00D5F305 /* Gas_Mileage_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C963551A9555EF00D5F305 /* Gas_Mileage_TrackerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29C963501A9555EF00D5F305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29C963301A9555EF00D5F305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C963371A9555EF00D5F305;
+			remoteInfo = "Gas Mileage Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29BD8B541A9BEA7800583744 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		29C963381A9555EF00D5F305 /* Gas Mileage Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gas Mileage Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C9633C1A9555EF00D5F305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C9633D1A9555EF00D5F305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29C9633F1A9555EF00D5F305 /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
+		29C963411A9555EF00D5F305 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
+		29C963441A9555EF00D5F305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29C963491A9555EF00D5F305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		29C9634F1A9555EF00D5F305 /* Gas Mileage TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gas Mileage TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C963541A9555EF00D5F305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C963551A9555EF00D5F305 /* Gas_Mileage_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gas_Mileage_TrackerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29C963351A9555EF00D5F305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C9634C1A9555EF00D5F305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29C9632F1A9555EF00D5F305 = {
+			isa = PBXGroup;
+			children = (
+				29BD8B541A9BEA7800583744 /* Images.xcassets */,
+				29C9633A1A9555EF00D5F305 /* Gas Mileage Tracker */,
+				29C963521A9555EF00D5F305 /* Gas Mileage TrackerTests */,
+				29C963391A9555EF00D5F305 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29C963391A9555EF00D5F305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29C963381A9555EF00D5F305 /* Gas Mileage Tracker.app */,
+				29C9634F1A9555EF00D5F305 /* Gas Mileage TrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29C9633A1A9555EF00D5F305 /* Gas Mileage Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				29C9633D1A9555EF00D5F305 /* AppDelegate.swift */,
+				29C9633F1A9555EF00D5F305 /* CalculationViewController.swift */,
+				29C963411A9555EF00D5F305 /* TrackerViewController.swift */,
+				29C963431A9555EF00D5F305 /* Main.storyboard */,
+				29C963481A9555EF00D5F305 /* LaunchScreen.xib */,
+				29C9633B1A9555EF00D5F305 /* Supporting Files */,
+			);
+			path = "Gas Mileage Tracker";
+			sourceTree = "<group>";
+		};
+		29C9633B1A9555EF00D5F305 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29C9633C1A9555EF00D5F305 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29C963521A9555EF00D5F305 /* Gas Mileage TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				29C963551A9555EF00D5F305 /* Gas_Mileage_TrackerTests.swift */,
+				29C963531A9555EF00D5F305 /* Supporting Files */,
+			);
+			path = "Gas Mileage TrackerTests";
+			sourceTree = "<group>";
+		};
+		29C963531A9555EF00D5F305 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29C963541A9555EF00D5F305 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C963371A9555EF00D5F305 /* Gas Mileage Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C963591A9555EF00D5F305 /* Build configuration list for PBXNativeTarget "Gas Mileage Tracker" */;
+			buildPhases = (
+				29C963341A9555EF00D5F305 /* Sources */,
+				29C963351A9555EF00D5F305 /* Frameworks */,
+				29C963361A9555EF00D5F305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gas Mileage Tracker";
+			productName = "Gas Mileage Tracker";
+			productReference = 29C963381A9555EF00D5F305 /* Gas Mileage Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29C9634E1A9555EF00D5F305 /* Gas Mileage TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C9635C1A9555EF00D5F305 /* Build configuration list for PBXNativeTarget "Gas Mileage TrackerTests" */;
+			buildPhases = (
+				29C9634B1A9555EF00D5F305 /* Sources */,
+				29C9634C1A9555EF00D5F305 /* Frameworks */,
+				29C9634D1A9555EF00D5F305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29C963511A9555EF00D5F305 /* PBXTargetDependency */,
+			);
+			name = "Gas Mileage TrackerTests";
+			productName = "Gas Mileage TrackerTests";
+			productReference = 29C9634F1A9555EF00D5F305 /* Gas Mileage TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29C963301A9555EF00D5F305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = 3308;
+				TargetAttributes = {
+					29C963371A9555EF00D5F305 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					29C9634E1A9555EF00D5F305 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 29C963371A9555EF00D5F305;
+					};
+				};
+			};
+			buildConfigurationList = 29C963331A9555EF00D5F305 /* Build configuration list for PBXProject "Gas Mileage Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29C9632F1A9555EF00D5F305;
+			productRefGroup = 29C963391A9555EF00D5F305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C963371A9555EF00D5F305 /* Gas Mileage Tracker */,
+				29C9634E1A9555EF00D5F305 /* Gas Mileage TrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29C963361A9555EF00D5F305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BD8B551A9BEA7800583744 /* Images.xcassets in Resources */,
+				29C963451A9555EF00D5F305 /* Main.storyboard in Resources */,
+				29C9634A1A9555EF00D5F305 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C9634D1A9555EF00D5F305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29C963341A9555EF00D5F305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C963421A9555EF00D5F305 /* TrackerViewController.swift in Sources */,
+				29C9633E1A9555EF00D5F305 /* AppDelegate.swift in Sources */,
+				29C963401A9555EF00D5F305 /* CalculationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C9634B1A9555EF00D5F305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C963561A9555EF00D5F305 /* Gas_Mileage_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29C963511A9555EF00D5F305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C963371A9555EF00D5F305 /* Gas Mileage Tracker */;
+			targetProxy = 29C963501A9555EF00D5F305 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29C963431A9555EF00D5F305 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29C963441A9555EF00D5F305 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29C963481A9555EF00D5F305 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29C963491A9555EF00D5F305 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29C963571A9555EF00D5F305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29C963581A9555EF00D5F305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29C9635A1A9555EF00D5F305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gas Mileage Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		29C9635B1A9555EF00D5F305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gas Mileage Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		29C9635D1A9555EF00D5F305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Gas Mileage TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gas Mileage Tracker.app/Gas Mileage Tracker";
+			};
+			name = Debug;
+		};
+		29C9635E1A9555EF00D5F305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Gas Mileage TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gas Mileage Tracker.app/Gas Mileage Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C963331A9555EF00D5F305 /* Build configuration list for PBXProject "Gas Mileage Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C963571A9555EF00D5F305 /* Debug */,
+				29C963581A9555EF00D5F305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C963591A9555EF00D5F305 /* Build configuration list for PBXNativeTarget "Gas Mileage Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C9635A1A9555EF00D5F305 /* Debug */,
+				29C9635B1A9555EF00D5F305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C9635C1A9555EF00D5F305 /* Build configuration list for PBXNativeTarget "Gas Mileage TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C9635D1A9555EF00D5F305 /* Debug */,
+				29C9635E1A9555EF00D5F305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29C963301A9555EF00D5F305 /* Project object */;
+}
