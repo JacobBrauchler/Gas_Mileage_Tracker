@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -16,11 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-gd-sR3">
-                                <rect key="frame" x="274" y="161" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the number of miles driven" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-zJ-9VL">
                                 <rect key="frame" x="16" y="107" width="250" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -33,25 +28,88 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-gs-a28">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Miles driven" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-gs-a28">
                                 <rect key="frame" x="274" y="107" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="77" y="139" width="248" height="30"/>
+                                </variation>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gas Mileage Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="94" y="28" width="151" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Gallons of gas added" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-gd-sR3">
+                                <rect key="frame" x="274" y="161" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="77" y="229" width="248" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="PaD-zJ-9VL" secondAttribute="centerX" id="8Nu-uK-nma"/>
+                            <constraint firstAttribute="centerX" secondItem="rvb-gd-sR3" secondAttribute="centerX" constant="5.5" id="94q-ak-7ze"/>
+                            <constraint firstAttribute="centerY" secondItem="rvb-gd-sR3" secondAttribute="centerY" constant="56" id="AZL-QW-hme"/>
+                            <constraint firstItem="PaD-zJ-9VL" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="32" id="If3-Q0-14w"/>
+                            <constraint firstAttribute="centerX" secondItem="uP1-gs-a28" secondAttribute="centerX" constant="5.5" id="Mwa-OC-ITC"/>
+                            <constraint firstAttribute="centerX" secondItem="y6U-uK-3SW" secondAttribute="centerX" constant="5.5" id="PKr-JR-Qjx"/>
+                            <constraint firstAttribute="centerY" secondItem="PaD-zJ-9VL" secondAttribute="centerY" constant="184.5" id="aKr-mZ-8KL"/>
+                            <constraint firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="hLf-8l-ANP"/>
+                            <constraint firstItem="y6U-uK-3SW" firstAttribute="top" secondItem="uP1-gs-a28" secondAttribute="bottom" constant="20" id="i5w-yq-v56"/>
+                            <constraint firstItem="rvb-gd-sR3" firstAttribute="top" secondItem="y6U-uK-3SW" secondAttribute="bottom" constant="19" id="n3J-HG-iUc"/>
+                            <constraint firstAttribute="centerY" secondItem="uP1-gs-a28" secondAttribute="centerY" constant="146" id="oZE-h6-NcM"/>
+                            <constraint firstItem="uP1-gs-a28" firstAttribute="top" secondItem="PaD-zJ-9VL" secondAttribute="bottom" constant="13" id="sHK-dW-6Ka"/>
+                            <constraint firstAttribute="centerY" secondItem="y6U-uK-3SW" secondAttribute="centerY" constant="100.5" id="sug-c8-dgl"/>
+                            <constraint firstAttribute="centerY" secondItem="A5M-7J-77L" secondAttribute="centerY" constant="240" id="y9n-xK-Yau"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hLf-8l-ANP"/>
+                                <exclude reference="y9n-xK-Yau"/>
+                                <exclude reference="8Nu-uK-nma"/>
+                                <exclude reference="If3-Q0-14w"/>
+                                <exclude reference="aKr-mZ-8KL"/>
+                                <exclude reference="Mwa-OC-ITC"/>
+                                <exclude reference="oZE-h6-NcM"/>
+                                <exclude reference="sHK-dW-6Ka"/>
+                                <exclude reference="PKr-JR-Qjx"/>
+                                <exclude reference="i5w-yq-v56"/>
+                                <exclude reference="sug-c8-dgl"/>
+                                <exclude reference="94q-ak-7ze"/>
+                                <exclude reference="AZL-QW-hme"/>
+                                <exclude reference="n3J-HG-iUc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="hLf-8l-ANP"/>
+                                <include reference="y9n-xK-Yau"/>
+                                <include reference="8Nu-uK-nma"/>
+                                <include reference="If3-Q0-14w"/>
+                                <include reference="aKr-mZ-8KL"/>
+                                <include reference="Mwa-OC-ITC"/>
+                                <include reference="oZE-h6-NcM"/>
+                                <include reference="sHK-dW-6Ka"/>
+                                <include reference="PKr-JR-Qjx"/>
+                                <include reference="i5w-yq-v56"/>
+                                <include reference="sug-c8-dgl"/>
+                                <include reference="94q-ak-7ze"/>
+                                <include reference="AZL-QW-hme"/>
+                                <include reference="n3J-HG-iUc"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-301"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
