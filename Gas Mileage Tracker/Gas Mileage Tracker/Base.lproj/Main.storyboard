@@ -16,19 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the number of miles driven" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-zJ-9VL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter the number of miles driven" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-zJ-9VL">
                                 <rect key="frame" x="16" y="107" width="250" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the gallons of gas added" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-uK-3SW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter the gallons of gas added" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-uK-3SW">
                                 <rect key="frame" x="16" y="161" width="235" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Miles driven" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-gs-a28">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Miles driven" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-gs-a28">
                                 <rect key="frame" x="274" y="107" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -36,18 +36,18 @@
                                     <rect key="frame" x="77" y="139" width="248" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gas Mileage Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gas Mileage Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="94" y="28" width="151" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Gallons of gas added" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-gd-sR3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Gallons of gas added" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-gd-sR3">
                                 <rect key="frame" x="274" y="161" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="77" y="229" width="248" height="30"/>
+                                    <rect key="frame" x="77" y="229" width="248" height="31"/>
                                 </variation>
                             </textField>
                         </subviews>
@@ -75,12 +75,12 @@
                                 <exclude reference="8Nu-uK-nma"/>
                                 <exclude reference="If3-Q0-14w"/>
                                 <exclude reference="aKr-mZ-8KL"/>
-                                <exclude reference="Mwa-OC-ITC"/>
-                                <exclude reference="oZE-h6-NcM"/>
-                                <exclude reference="sHK-dW-6Ka"/>
                                 <exclude reference="PKr-JR-Qjx"/>
                                 <exclude reference="i5w-yq-v56"/>
                                 <exclude reference="sug-c8-dgl"/>
+                                <exclude reference="Mwa-OC-ITC"/>
+                                <exclude reference="oZE-h6-NcM"/>
+                                <exclude reference="sHK-dW-6Ka"/>
                                 <exclude reference="94q-ak-7ze"/>
                                 <exclude reference="AZL-QW-hme"/>
                                 <exclude reference="n3J-HG-iUc"/>
@@ -93,12 +93,12 @@
                                 <include reference="8Nu-uK-nma"/>
                                 <include reference="If3-Q0-14w"/>
                                 <include reference="aKr-mZ-8KL"/>
-                                <include reference="Mwa-OC-ITC"/>
-                                <include reference="oZE-h6-NcM"/>
-                                <include reference="sHK-dW-6Ka"/>
                                 <include reference="PKr-JR-Qjx"/>
                                 <include reference="i5w-yq-v56"/>
                                 <include reference="sug-c8-dgl"/>
+                                <include reference="Mwa-OC-ITC"/>
+                                <include reference="oZE-h6-NcM"/>
+                                <include reference="sHK-dW-6Ka"/>
                                 <include reference="94q-ak-7ze"/>
                                 <include reference="AZL-QW-hme"/>
                                 <include reference="n3J-HG-iUc"/>
