@@ -20,6 +20,13 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+   
+    
+    @IBOutlet weak var GetMiles: UITextField!
+    @IBOutlet weak var GetGallons: UITextField!
+    @IBOutlet weak var MpgCalc: UITextField!
+    @IBAction func CalculatePressed(sender: AnyObject) {
+    }
     func calculategasmileage(milesdriven: Int, gaspurchased: Int) -> Int {
         var calculation = milesdriven / gaspurchased
         return calculation
