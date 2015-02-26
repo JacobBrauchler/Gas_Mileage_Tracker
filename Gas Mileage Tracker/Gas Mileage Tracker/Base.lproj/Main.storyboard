@@ -28,7 +28,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Miles driven" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-gs-a28">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Miles driven" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-gs-a28">
                                 <rect key="frame" x="274" y="107" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -42,24 +42,34 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Gallons of gas added" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-gd-sR3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Gallons of gas added" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-gd-sR3">
                                 <rect key="frame" x="274" y="161" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="77" y="229" width="248" height="31"/>
+                                    <rect key="frame" x="77" y="229" width="248" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orS-iS-frh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="orS-iS-frh" secondAttribute="centerY" id="3ov-8R-4Sa"/>
                             <constraint firstAttribute="centerX" secondItem="PaD-zJ-9VL" secondAttribute="centerX" id="8Nu-uK-nma"/>
                             <constraint firstAttribute="centerX" secondItem="rvb-gd-sR3" secondAttribute="centerX" constant="5.5" id="94q-ak-7ze"/>
                             <constraint firstAttribute="centerY" secondItem="rvb-gd-sR3" secondAttribute="centerY" constant="56" id="AZL-QW-hme"/>
                             <constraint firstItem="PaD-zJ-9VL" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="32" id="If3-Q0-14w"/>
+                            <constraint firstAttribute="centerX" secondItem="orS-iS-frh" secondAttribute="centerX" constant="5.5" id="LLf-ex-xIF"/>
                             <constraint firstAttribute="centerX" secondItem="uP1-gs-a28" secondAttribute="centerX" constant="5.5" id="Mwa-OC-ITC"/>
                             <constraint firstAttribute="centerX" secondItem="y6U-uK-3SW" secondAttribute="centerX" constant="5.5" id="PKr-JR-Qjx"/>
                             <constraint firstAttribute="centerY" secondItem="PaD-zJ-9VL" secondAttribute="centerY" constant="184.5" id="aKr-mZ-8KL"/>
+                            <constraint firstItem="orS-iS-frh" firstAttribute="top" secondItem="rvb-gd-sR3" secondAttribute="bottom" constant="23" id="cdJ-vk-pR7"/>
                             <constraint firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="hLf-8l-ANP"/>
                             <constraint firstItem="y6U-uK-3SW" firstAttribute="top" secondItem="uP1-gs-a28" secondAttribute="bottom" constant="20" id="i5w-yq-v56"/>
                             <constraint firstItem="rvb-gd-sR3" firstAttribute="top" secondItem="y6U-uK-3SW" secondAttribute="bottom" constant="19" id="n3J-HG-iUc"/>
@@ -69,39 +79,51 @@
                             <constraint firstAttribute="centerY" secondItem="A5M-7J-77L" secondAttribute="centerY" constant="240" id="y9n-xK-Yau"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="orS-iS-frh"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="hLf-8l-ANP"/>
                                 <exclude reference="y9n-xK-Yau"/>
                                 <exclude reference="8Nu-uK-nma"/>
                                 <exclude reference="If3-Q0-14w"/>
                                 <exclude reference="aKr-mZ-8KL"/>
-                                <exclude reference="PKr-JR-Qjx"/>
-                                <exclude reference="i5w-yq-v56"/>
-                                <exclude reference="sug-c8-dgl"/>
                                 <exclude reference="Mwa-OC-ITC"/>
                                 <exclude reference="oZE-h6-NcM"/>
                                 <exclude reference="sHK-dW-6Ka"/>
+                                <exclude reference="PKr-JR-Qjx"/>
+                                <exclude reference="i5w-yq-v56"/>
+                                <exclude reference="sug-c8-dgl"/>
                                 <exclude reference="94q-ak-7ze"/>
                                 <exclude reference="AZL-QW-hme"/>
                                 <exclude reference="n3J-HG-iUc"/>
+                                <exclude reference="3ov-8R-4Sa"/>
+                                <exclude reference="LLf-ex-xIF"/>
+                                <exclude reference="cdJ-vk-pR7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="orS-iS-frh"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="hLf-8l-ANP"/>
                                 <include reference="y9n-xK-Yau"/>
                                 <include reference="8Nu-uK-nma"/>
                                 <include reference="If3-Q0-14w"/>
                                 <include reference="aKr-mZ-8KL"/>
-                                <include reference="PKr-JR-Qjx"/>
-                                <include reference="i5w-yq-v56"/>
-                                <include reference="sug-c8-dgl"/>
                                 <include reference="Mwa-OC-ITC"/>
                                 <include reference="oZE-h6-NcM"/>
                                 <include reference="sHK-dW-6Ka"/>
+                                <include reference="PKr-JR-Qjx"/>
+                                <include reference="i5w-yq-v56"/>
+                                <include reference="sug-c8-dgl"/>
                                 <include reference="94q-ak-7ze"/>
                                 <include reference="AZL-QW-hme"/>
                                 <include reference="n3J-HG-iUc"/>
+                                <include reference="3ov-8R-4Sa"/>
+                                <include reference="LLf-ex-xIF"/>
+                                <include reference="cdJ-vk-pR7"/>
                             </mask>
                         </variation>
                     </view>
