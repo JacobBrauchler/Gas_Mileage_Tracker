@@ -56,9 +56,6 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="153" y="276" width="83" height="36"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -86,23 +83,23 @@
                                 <exclude reference="orS-iS-frh"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="3ov-8R-4Sa"/>
+                                <exclude reference="LLf-ex-xIF"/>
+                                <exclude reference="cdJ-vk-pR7"/>
                                 <exclude reference="hLf-8l-ANP"/>
                                 <exclude reference="y9n-xK-Yau"/>
                                 <exclude reference="8Nu-uK-nma"/>
                                 <exclude reference="If3-Q0-14w"/>
                                 <exclude reference="aKr-mZ-8KL"/>
-                                <exclude reference="Mwa-OC-ITC"/>
-                                <exclude reference="oZE-h6-NcM"/>
-                                <exclude reference="sHK-dW-6Ka"/>
                                 <exclude reference="PKr-JR-Qjx"/>
                                 <exclude reference="i5w-yq-v56"/>
                                 <exclude reference="sug-c8-dgl"/>
+                                <exclude reference="Mwa-OC-ITC"/>
+                                <exclude reference="oZE-h6-NcM"/>
+                                <exclude reference="sHK-dW-6Ka"/>
                                 <exclude reference="94q-ak-7ze"/>
                                 <exclude reference="AZL-QW-hme"/>
                                 <exclude reference="n3J-HG-iUc"/>
-                                <exclude reference="3ov-8R-4Sa"/>
-                                <exclude reference="LLf-ex-xIF"/>
-                                <exclude reference="cdJ-vk-pR7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -110,23 +107,23 @@
                                 <include reference="orS-iS-frh"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="3ov-8R-4Sa"/>
+                                <include reference="LLf-ex-xIF"/>
+                                <include reference="cdJ-vk-pR7"/>
                                 <include reference="hLf-8l-ANP"/>
                                 <include reference="y9n-xK-Yau"/>
                                 <include reference="8Nu-uK-nma"/>
                                 <include reference="If3-Q0-14w"/>
                                 <include reference="aKr-mZ-8KL"/>
-                                <include reference="Mwa-OC-ITC"/>
-                                <include reference="oZE-h6-NcM"/>
-                                <include reference="sHK-dW-6Ka"/>
                                 <include reference="PKr-JR-Qjx"/>
                                 <include reference="i5w-yq-v56"/>
                                 <include reference="sug-c8-dgl"/>
+                                <include reference="Mwa-OC-ITC"/>
+                                <include reference="oZE-h6-NcM"/>
+                                <include reference="sHK-dW-6Ka"/>
                                 <include reference="94q-ak-7ze"/>
                                 <include reference="AZL-QW-hme"/>
                                 <include reference="n3J-HG-iUc"/>
-                                <include reference="3ov-8R-4Sa"/>
-                                <include reference="LLf-ex-xIF"/>
-                                <include reference="cdJ-vk-pR7"/>
                             </mask>
                         </variation>
                     </view>
