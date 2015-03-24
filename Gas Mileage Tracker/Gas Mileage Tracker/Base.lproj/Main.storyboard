@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -50,9 +50,23 @@
                                     <rect key="frame" x="77" y="229" width="248" height="31"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K82-92-oO6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="126" y="323" width="137" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Calculate" destination="9pv-A4-QxB" eventType="touchUpInside" id="BVV-vC-IuK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="K82-92-oO6" secondAttribute="bottom" constant="158" id="61s-HG-mwp"/>
                             <constraint firstAttribute="centerX" secondItem="PaD-zJ-9VL" secondAttribute="centerX" id="8Nu-uK-nma"/>
                             <constraint firstAttribute="centerX" secondItem="rvb-gd-sR3" secondAttribute="centerX" constant="5.5" id="94q-ak-7ze"/>
                             <constraint firstAttribute="centerY" secondItem="rvb-gd-sR3" secondAttribute="centerY" constant="56" id="AZL-QW-hme"/>
@@ -66,46 +80,64 @@
                             <constraint firstAttribute="centerY" secondItem="uP1-gs-a28" secondAttribute="centerY" constant="146" id="oZE-h6-NcM"/>
                             <constraint firstItem="uP1-gs-a28" firstAttribute="top" secondItem="PaD-zJ-9VL" secondAttribute="bottom" constant="13" id="sHK-dW-6Ka"/>
                             <constraint firstAttribute="centerY" secondItem="y6U-uK-3SW" secondAttribute="centerY" constant="100.5" id="sug-c8-dgl"/>
+                            <constraint firstAttribute="width" secondItem="K82-92-oO6" secondAttribute="width" id="tJ1-7P-LNn"/>
                             <constraint firstAttribute="centerY" secondItem="A5M-7J-77L" secondAttribute="centerY" constant="240" id="y9n-xK-Yau"/>
+                            <constraint firstAttribute="centerY" secondItem="K82-92-oO6" secondAttribute="centerY" constant="-58" id="yae-yS-ogB"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="K82-92-oO6"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="hLf-8l-ANP"/>
                                 <exclude reference="y9n-xK-Yau"/>
                                 <exclude reference="8Nu-uK-nma"/>
                                 <exclude reference="If3-Q0-14w"/>
                                 <exclude reference="aKr-mZ-8KL"/>
-                                <exclude reference="PKr-JR-Qjx"/>
-                                <exclude reference="i5w-yq-v56"/>
-                                <exclude reference="sug-c8-dgl"/>
                                 <exclude reference="Mwa-OC-ITC"/>
                                 <exclude reference="oZE-h6-NcM"/>
                                 <exclude reference="sHK-dW-6Ka"/>
+                                <exclude reference="PKr-JR-Qjx"/>
+                                <exclude reference="i5w-yq-v56"/>
+                                <exclude reference="sug-c8-dgl"/>
                                 <exclude reference="94q-ak-7ze"/>
                                 <exclude reference="AZL-QW-hme"/>
                                 <exclude reference="n3J-HG-iUc"/>
+                                <exclude reference="tJ1-7P-LNn"/>
+                                <exclude reference="yae-yS-ogB"/>
+                                <exclude reference="61s-HG-mwp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="K82-92-oO6"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="hLf-8l-ANP"/>
                                 <include reference="y9n-xK-Yau"/>
                                 <include reference="8Nu-uK-nma"/>
                                 <include reference="If3-Q0-14w"/>
                                 <include reference="aKr-mZ-8KL"/>
-                                <include reference="PKr-JR-Qjx"/>
-                                <include reference="i5w-yq-v56"/>
-                                <include reference="sug-c8-dgl"/>
                                 <include reference="Mwa-OC-ITC"/>
                                 <include reference="oZE-h6-NcM"/>
                                 <include reference="sHK-dW-6Ka"/>
+                                <include reference="PKr-JR-Qjx"/>
+                                <include reference="i5w-yq-v56"/>
+                                <include reference="sug-c8-dgl"/>
                                 <include reference="94q-ak-7ze"/>
                                 <include reference="AZL-QW-hme"/>
                                 <include reference="n3J-HG-iUc"/>
+                                <include reference="tJ1-7P-LNn"/>
+                                <include reference="yae-yS-ogB"/>
+                                <include reference="61s-HG-mwp"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="gallons" destination="rvb-gd-sR3" id="Set-JC-q7x"/>
+                        <outlet property="miles" destination="uP1-gs-a28" id="s9Y-Zt-gOb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
