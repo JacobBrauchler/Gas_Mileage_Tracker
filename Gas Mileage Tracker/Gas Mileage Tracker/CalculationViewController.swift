@@ -12,10 +12,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
 
     // initialise variables
     @IBOutlet weak var gallons: UITextField!
-    var gallonsTotal: Int!
+    var gallonsTotal: Float32!
     @IBOutlet weak var miles: UITextField!
-    var milesDriven: Int!
-    var calculation: Int!
+    var milesDriven: Float32!
+    var calculation: Float32!
 
 
 
@@ -48,13 +48,13 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     //get string from UITextField
     func getVariables(){
         //get desired string from UITextField convert to int
-        milesDriven = miles.text.toInt()
-        gallonsTotal = gallons.text.toInt()
+        milesDriven = (miles.text as NSString).floatValue
+        gallonsTotal = (gallons.text as NSString).floatValue
         
     }
     
     
-    func calculategasmileage() -> Int {
+    func calculategasmileage() -> Float32 {
         calculation = milesDriven / gallonsTotal
         println(calculation)
         return calculation
