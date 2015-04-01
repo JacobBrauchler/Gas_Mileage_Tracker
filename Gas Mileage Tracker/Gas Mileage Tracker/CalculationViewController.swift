@@ -16,7 +16,9 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var miles: UITextField!
     var milesDriven: Float32!
     var calculation: Float32!
+    var calculation2: String!
 
+    @IBOutlet weak var Calculation: UILabel!
 
 
 
@@ -43,6 +45,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         calculategasmileage()
         
         
+        
     }
     
     //get string from UITextField
@@ -57,6 +60,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     func calculategasmileage() -> Float32 {
         calculation = milesDriven / gallonsTotal
         println(calculation)
+        let calculation2 = NSString(format: "%.2f", calculation)
+        self.Calculation.text = calculation2
         return calculation
     
     }

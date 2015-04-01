@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -50,6 +50,12 @@
                                     <rect key="frame" x="77" y="229" width="248" height="31"/>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCh-xu-B6w">
+                                <rect key="frame" x="115" y="257" width="52" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K82-92-oO6">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -75,12 +81,15 @@
                             <constraint firstAttribute="centerX" secondItem="y6U-uK-3SW" secondAttribute="centerX" constant="5.5" id="PKr-JR-Qjx"/>
                             <constraint firstAttribute="centerY" secondItem="PaD-zJ-9VL" secondAttribute="centerY" constant="184.5" id="aKr-mZ-8KL"/>
                             <constraint firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="hLf-8l-ANP"/>
+                            <constraint firstAttribute="centerX" secondItem="xCh-xu-B6w" secondAttribute="centerX" constant="131" id="hQy-td-s4N"/>
                             <constraint firstItem="y6U-uK-3SW" firstAttribute="top" secondItem="uP1-gs-a28" secondAttribute="bottom" constant="20" id="i5w-yq-v56"/>
                             <constraint firstItem="rvb-gd-sR3" firstAttribute="top" secondItem="y6U-uK-3SW" secondAttribute="bottom" constant="19" id="n3J-HG-iUc"/>
+                            <constraint firstAttribute="centerY" secondItem="xCh-xu-B6w" secondAttribute="centerY" constant="-28" id="n7H-ut-hVQ"/>
                             <constraint firstAttribute="centerY" secondItem="uP1-gs-a28" secondAttribute="centerY" constant="146" id="oZE-h6-NcM"/>
                             <constraint firstItem="uP1-gs-a28" firstAttribute="top" secondItem="PaD-zJ-9VL" secondAttribute="bottom" constant="13" id="sHK-dW-6Ka"/>
                             <constraint firstAttribute="centerY" secondItem="y6U-uK-3SW" secondAttribute="centerY" constant="100.5" id="sug-c8-dgl"/>
                             <constraint firstAttribute="width" secondItem="K82-92-oO6" secondAttribute="width" id="tJ1-7P-LNn"/>
+                            <constraint firstItem="xCh-xu-B6w" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="urH-Cn-KTu"/>
                             <constraint firstAttribute="centerY" secondItem="A5M-7J-77L" secondAttribute="centerY" constant="240" id="y9n-xK-Yau"/>
                             <constraint firstAttribute="centerY" secondItem="K82-92-oO6" secondAttribute="centerY" constant="-58" id="yae-yS-ogB"/>
                         </constraints>
@@ -89,22 +98,22 @@
                                 <exclude reference="K82-92-oO6"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="tJ1-7P-LNn"/>
+                                <exclude reference="yae-yS-ogB"/>
                                 <exclude reference="hLf-8l-ANP"/>
                                 <exclude reference="y9n-xK-Yau"/>
                                 <exclude reference="8Nu-uK-nma"/>
                                 <exclude reference="If3-Q0-14w"/>
                                 <exclude reference="aKr-mZ-8KL"/>
-                                <exclude reference="Mwa-OC-ITC"/>
-                                <exclude reference="oZE-h6-NcM"/>
-                                <exclude reference="sHK-dW-6Ka"/>
                                 <exclude reference="PKr-JR-Qjx"/>
                                 <exclude reference="i5w-yq-v56"/>
                                 <exclude reference="sug-c8-dgl"/>
+                                <exclude reference="Mwa-OC-ITC"/>
+                                <exclude reference="oZE-h6-NcM"/>
+                                <exclude reference="sHK-dW-6Ka"/>
                                 <exclude reference="94q-ak-7ze"/>
                                 <exclude reference="AZL-QW-hme"/>
                                 <exclude reference="n3J-HG-iUc"/>
-                                <exclude reference="tJ1-7P-LNn"/>
-                                <exclude reference="yae-yS-ogB"/>
                                 <exclude reference="61s-HG-mwp"/>
                             </mask>
                         </variation>
@@ -113,28 +122,29 @@
                                 <include reference="K82-92-oO6"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="tJ1-7P-LNn"/>
+                                <include reference="yae-yS-ogB"/>
                                 <include reference="hLf-8l-ANP"/>
                                 <include reference="y9n-xK-Yau"/>
                                 <include reference="8Nu-uK-nma"/>
                                 <include reference="If3-Q0-14w"/>
                                 <include reference="aKr-mZ-8KL"/>
-                                <include reference="Mwa-OC-ITC"/>
-                                <include reference="oZE-h6-NcM"/>
-                                <include reference="sHK-dW-6Ka"/>
                                 <include reference="PKr-JR-Qjx"/>
                                 <include reference="i5w-yq-v56"/>
                                 <include reference="sug-c8-dgl"/>
+                                <include reference="Mwa-OC-ITC"/>
+                                <include reference="oZE-h6-NcM"/>
+                                <include reference="sHK-dW-6Ka"/>
                                 <include reference="94q-ak-7ze"/>
                                 <include reference="AZL-QW-hme"/>
                                 <include reference="n3J-HG-iUc"/>
-                                <include reference="tJ1-7P-LNn"/>
-                                <include reference="yae-yS-ogB"/>
                                 <include reference="61s-HG-mwp"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="Calculation" destination="xCh-xu-B6w" id="bI1-S8-ZYg"/>
                         <outlet property="gallons" destination="rvb-gd-sR3" id="Set-JC-q7x"/>
                         <outlet property="miles" destination="uP1-gs-a28" id="s9Y-Zt-gOb"/>
                     </connections>
