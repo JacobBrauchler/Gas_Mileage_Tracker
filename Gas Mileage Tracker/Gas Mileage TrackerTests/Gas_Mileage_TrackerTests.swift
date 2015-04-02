@@ -8,6 +8,8 @@
 
 import UIKit
 import XCTest
+import Gas_Mileage_Tracker
+
 
 class Gas_Mileage_TrackerTests: XCTestCase {
     
@@ -21,16 +23,40 @@ class Gas_Mileage_TrackerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testTest() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
     }
+    func testViewDidLoad1()
+        
+    {
+        
+        let v = FirstViewController()
+        XCTAssertNotNil(v.view, "View Did Not load")
+    }
     
+    func testViewDidLoad2()
+    {
+        
+        let v = SecondViewController()
+        XCTAssertNotNil(v.view, "View Did Not load")
+    }
+    func testMath()
+    {
+        let obj = FirstViewController()
+        obj.milesDriven = 20
+        obj.gallonsTotal = 10
+        XCTAssertEqual(obj.Calculation, "2.00")
+    }
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
+
     
 }

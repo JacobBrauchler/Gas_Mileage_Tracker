@@ -51,7 +51,7 @@
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCh-xu-B6w">
-                                <rect key="frame" x="115" y="257" width="52" height="38"/>
+                                <rect key="frame" x="160" y="237" width="52" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                             <constraint firstAttribute="centerX" secondItem="y6U-uK-3SW" secondAttribute="centerX" constant="5.5" id="PKr-JR-Qjx"/>
                             <constraint firstAttribute="centerY" secondItem="PaD-zJ-9VL" secondAttribute="centerY" constant="184.5" id="aKr-mZ-8KL"/>
                             <constraint firstAttribute="centerX" secondItem="A5M-7J-77L" secondAttribute="centerX" id="hLf-8l-ANP"/>
-                            <constraint firstAttribute="centerX" secondItem="xCh-xu-B6w" secondAttribute="centerX" constant="131" id="hQy-td-s4N"/>
+                            <constraint firstAttribute="centerX" secondItem="xCh-xu-B6w" secondAttribute="centerX" constant="81" id="hQy-td-s4N"/>
                             <constraint firstItem="y6U-uK-3SW" firstAttribute="top" secondItem="uP1-gs-a28" secondAttribute="bottom" constant="20" id="i5w-yq-v56"/>
                             <constraint firstItem="rvb-gd-sR3" firstAttribute="top" secondItem="y6U-uK-3SW" secondAttribute="bottom" constant="19" id="n3J-HG-iUc"/>
                             <constraint firstAttribute="centerY" secondItem="xCh-xu-B6w" secondAttribute="centerY" constant="-28" id="n7H-ut-hVQ"/>

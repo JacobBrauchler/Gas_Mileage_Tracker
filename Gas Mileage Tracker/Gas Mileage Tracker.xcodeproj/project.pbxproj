@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29B037A81ACCC0D80089C68F /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9633F1A9555EF00D5F305 /* CalculationViewController.swift */; };
+		29B037A91ACCC1F80089C68F /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C963411A9555EF00D5F305 /* TrackerViewController.swift */; };
 		29BD8B551A9BEA7800583744 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29BD8B541A9BEA7800583744 /* Images.xcassets */; };
 		29C9633E1A9555EF00D5F305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9633D1A9555EF00D5F305 /* AppDelegate.swift */; };
 		29C963401A9555EF00D5F305 /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9633F1A9555EF00D5F305 /* CalculationViewController.swift */; };
@@ -225,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B037A91ACCC1F80089C68F /* TrackerViewController.swift in Sources */,
+				29B037A81ACCC0D80089C68F /* CalculationViewController.swift in Sources */,
 				29C963561A9555EF00D5F305 /* Gas_Mileage_TrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
