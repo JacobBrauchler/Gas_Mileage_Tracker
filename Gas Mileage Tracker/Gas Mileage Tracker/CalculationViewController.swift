@@ -16,7 +16,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var miles: UITextField!
     var milesDriven: Float32!
     var calculation: Float32!
-    var calculation2: String!
+    var calculationString: String!
 
     @IBOutlet weak var Calculation: UILabel!
 
@@ -43,6 +43,8 @@ override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.view.endEditing(true)
         getVariables()
         calculategasmileage()
+        let calculationString = NSString(format: "%.2f", calculation)
+        self.Calculation.text = calculationString
         
         
         
@@ -60,8 +62,6 @@ override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
     func calculategasmileage() -> Float32 {
         calculation = milesDriven / gallonsTotal
         println(calculation)
-        let calculation2 = NSString(format: "%.2f", calculation)
-        self.Calculation.text = calculation2
         return calculation
     
     }

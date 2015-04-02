@@ -43,10 +43,13 @@ class Gas_Mileage_TrackerTests: XCTestCase {
     }
     func testMath()
     {
+        var answer : Float32!
+        answer = 2.00
         let obj = FirstViewController()
-        obj.milesDriven = 20
-        obj.gallonsTotal = 10
-        XCTAssertEqual(obj.Calculation, "2.00")
+        obj.gallonsTotal = 10;
+        obj.milesDriven = 20;
+        obj.calculategasmileage()
+        XCTAssertEqual(obj.calculation, answer, "fucked up")
     }
 
     func testPerformanceExample() {
