@@ -49,8 +49,11 @@ class Gas_Mileage_TrackerTests: XCTestCase {
         obj.gallonsTotal = 10;
         obj.milesDriven = 20;
         obj.calculategasmileage()
-        XCTAssertEqual(obj.calculation, answer, "fucked up")
+        XCTAssertEqual(obj.calculation, answer, "Incorect Value ")
     }
+    
+
+
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
