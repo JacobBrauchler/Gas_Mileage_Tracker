@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		294005261ADF0F31000B7254 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 294005291ADF0F31000B7254 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				2940052A1ADF0F42000B7254 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		29B037A81ACCC0D80089C68F /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9633F1A9555EF00D5F305 /* CalculationViewController.swift */; };
 		29B037A91ACCC1F80089C68F /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C963411A9555EF00D5F305 /* TrackerViewController.swift */; };
@@ -164,6 +178,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = 3308;
 				TargetAttributes = {
+					294005261ADF0F31000B7254 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					29C963371A9555EF00D5F305 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -188,6 +205,7 @@
 			targets = (
 				29C963371A9555EF00D5F305 /* Gas Mileage Tracker */,
 				29C9634E1A9555EF00D5F305 /* Gas Mileage TrackerTests */,
+				294005261ADF0F31000B7254 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +229,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2940052A1ADF0F42000B7254 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${Gas Mileage Tracker} \\\n--project-company \"3308\" \\\n--company-id \"com.3308\" \\\n--output ${Gas Mileage Tracker}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-install-docset \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${~Documents/Developer/Gas Mileage Tracker}/${Gas_Mileage_Tracker}\nfi;\n#fi;";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29C963341A9555EF00D5F305 /* Sources */ = {
@@ -263,6 +297,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		294005271ADF0F31000B7254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		294005281ADF0F31000B7254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		29C963571A9555EF00D5F305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,6 +449,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		294005291ADF0F31000B7254 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				294005271ADF0F31000B7254 /* Debug */,
+				294005281ADF0F31000B7254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29C963331A9555EF00D5F305 /* Build configuration list for PBXProject "Gas Mileage Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

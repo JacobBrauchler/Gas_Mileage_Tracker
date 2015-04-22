@@ -1,3 +1,4 @@
+///
 //
 //  AppDelegate.swift
 //  Gas Mileage Tracker
@@ -5,7 +6,9 @@
 //  Created by Jacob Brauchler on 2/18/15.
 //  Copyright (c) 2015 3308. All rights reserved.
 //
-
+/**
+*  <#Description#>
+*/
 import UIKit
 
 @UIApplicationMain

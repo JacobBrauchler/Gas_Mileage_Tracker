@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Documentation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Gas Mileage Tracker.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>294005261ADF0F31000B7254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>29C963371A9555EF00D5F305</key>
 		<dict>
 			<key>primary</key>
