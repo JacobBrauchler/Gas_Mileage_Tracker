@@ -26,16 +26,28 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
 override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    /**
+    <#Description#> Do any additional setup after loading the view, typically from a nib.
+    */
     }
 
 override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    /**
+    <#Description#> Dispose of any resources that can be recreated.
+    
+    :param: touches <#touches description#>
+    :param: event   <#event description#>
+    */
     }
     
     
 override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.view.endEditing(true)
+    /**
+    <#Description#> when button is presed, close keyboard, get variables, calculate mpg
+    */
         
     }
     
@@ -46,6 +58,9 @@ override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         calculategasmileage()
         let calculationString = NSString(format: "%.2f", calculation)
         self.Calculation.text = calculationString
+        /**
+        <#Description#> Calculate
+        */
         
         
         
@@ -56,7 +71,11 @@ override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         //get desired string from UITextField convert to int
         milesDriven = (miles.text as NSString).floatValue
         gallonsTotal = (gallons.text as NSString).floatValue
+        /**
+        <#Description#> get desired string from UITextField convert to int
         
+        :returns: <#return value description#>
+        */
     }
     
     
@@ -64,6 +83,9 @@ override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         calculation = milesDriven / gallonsTotal
         println(calculation)
         return calculation
+        /**
+        *  <#Description#> Calculate float
+        */
     
     }
 

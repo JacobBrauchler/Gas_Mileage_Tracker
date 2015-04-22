@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		17C66CCB1AE84D2200051096 /* APDoc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 17C66CCE1AE84D2200051096 /* Build configuration list for PBXAggregateTarget "APDoc" */;
+			buildPhases = (
+				17EE4BA21AE8523700F4BF2F /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = APDoc;
+			productName = APDoc;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		29B037A81ACCC0D80089C68F /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9633F1A9555EF00D5F305 /* CalculationViewController.swift */; };
 		29B037A91ACCC1F80089C68F /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C963411A9555EF00D5F305 /* TrackerViewController.swift */; };
@@ -164,6 +178,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = 3308;
 				TargetAttributes = {
+					17C66CCB1AE84D2200051096 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					29C963371A9555EF00D5F305 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -188,6 +205,7 @@
 			targets = (
 				29C963371A9555EF00D5F305 /* Gas Mileage Tracker */,
 				29C9634E1A9555EF00D5F305 /* Gas Mileage TrackerTests */,
+				17C66CCB1AE84D2200051096 /* APDoc */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +229,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17EE4BA21AE8523700F4BF2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"3308\";\ncompanyID=\"com.3308\";\ncompanyURL=\"http://3308.com\";\ntarget=\"Gas Mileage Tracker\";\n#target=\"macosx\";\noutputPath=\"/Users/kurtrocks123/Desktop/Gas_Mileage_Tracker\";\n# End constants\n/usr/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29C963341A9555EF00D5F305 /* Sources */ = {
@@ -263,6 +297,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		17C66CCC1AE84D2200051096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17C66CCD1AE84D2200051096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		29C963571A9555EF00D5F305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,6 +449,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17C66CCE1AE84D2200051096 /* Build configuration list for PBXAggregateTarget "APDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C66CCC1AE84D2200051096 /* Debug */,
+				17C66CCD1AE84D2200051096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29C963331A9555EF00D5F305 /* Build configuration list for PBXProject "Gas Mileage Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

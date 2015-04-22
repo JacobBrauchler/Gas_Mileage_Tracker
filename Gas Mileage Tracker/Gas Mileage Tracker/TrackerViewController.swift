@@ -18,11 +18,22 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        /**
+        <#Description#> Do any additional setup after loading the view, typically from a nib.
+        */
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        /**
+        *  <#Description#> Dispose of any resources that can be recreated.
+        *
+        *  @param UITableView <#UITableView description#>
+        *  @param Int         <#Int description#>
+        *
+        *  @return <#return value description#>
+        */
     }
     //http://www.raywenderlich.com/75289/swift-tutorial-part-3-tuples-protocols-delegates-table-views
     //hey guys I found code similar to what I think we want to do, I got started but don't have it working quite yet. 
@@ -37,6 +48,9 @@ class SecondViewController: UIViewController {
         cell.textLabel?.text = "\(calculation)%:"
         cell.detailTextLabel?.text = String(format:"milesDriven: $%0.2f, gallonsTotal: $%0.2f, calculation",milesDriven, gallonsTotal, calculation)
         return cell
+        /**
+        *  <#Description#> load table
+        */
     }
 
 
