@@ -50,7 +50,7 @@ class NewMenuViewController: UIViewController {
         calculategasmileage()
         let calculationString = calculation.description
         //self.Calculation.text = calculationString
-        coreDataStack.insetNewMenu(calculationString)
+        coreDataStack.insetNewMenu(calculationString + " " + "MPG")
         
         
         disMis()
