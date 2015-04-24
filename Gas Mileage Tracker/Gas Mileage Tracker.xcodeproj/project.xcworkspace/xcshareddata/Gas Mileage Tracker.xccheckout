@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E3A42158-7D43-478E-B785-65837E8CFB7C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Gas Mileage Tracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>439019F8DBD322A7640C2B4C6DF31A2F747540AC</key>
+		<string>https://github.com/jabr9983/Gas_Mileage_Tracker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gas Mileage Tracker/Gas Mileage Tracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>439019F8DBD322A7640C2B4C6DF31A2F747540AC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jabr9983/Gas_Mileage_Tracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>439019F8DBD322A7640C2B4C6DF31A2F747540AC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>439019F8DBD322A7640C2B4C6DF31A2F747540AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Gas_Mileage_Tracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
