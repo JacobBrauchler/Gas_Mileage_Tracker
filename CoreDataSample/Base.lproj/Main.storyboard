@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--List Table View Controller-->
+        <!--Gas Mileage Tracker-->
         <scene sceneID="4s7-rk-zxg">
             <objects>
                 <tableViewController id="52J-H2-yLK" customClass="ListTableViewController" customModule="CoreDataSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,13 +13,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gas Mileage Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yyr-cf-U5b">
-                            <rect key="frame" x="0.0" y="-21" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Myd-US-JWF" customClass="ListTable">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -33,7 +26,7 @@
                             <outlet property="delegate" destination="52J-H2-yLK" id="sv6-Ny-TZh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7jC-Rg-LJW">
+                    <navigationItem key="navigationItem" title="Gas Mileage Tracker" id="7jC-Rg-LJW">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sXs-oY-66s">
                             <connections>
                                 <segue destination="QVe-jf-gOQ" kind="presentation" id="5aq-0b-BHf"/>
