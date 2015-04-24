@@ -70,8 +70,11 @@ class ListTableViewController: UITableViewController , NSFetchedResultsControlle
         let menus = self.fetchedResultsController.fetchedObjects as [Menu]
         return menus.count
     }
-
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         let menu = self.fetchedResultsController.objectAtIndexPath(indexPath) as Menu
         cell.textLabel.text = menu.menuText

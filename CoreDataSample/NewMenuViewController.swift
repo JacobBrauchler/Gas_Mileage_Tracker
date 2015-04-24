@@ -11,7 +11,19 @@ import UIKit
 let coreDataStack = CoreDataStack()
 class NewMenuViewController: UIViewController {
 
-    @IBOutlet weak var menuTextField: UITextField!
+    
+    @IBOutlet weak var miles: UITextField!
+    
+    @IBOutlet weak var gallons: UITextField!
+    
+    var gallonsTotal: Float32!
+    var milesDriven: Float32!
+    var calculation: Float32!
+    var calculationString: String!
+    
+    //@IBOutlet weak var Calculation: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,13 +42,34 @@ class NewMenuViewController: UIViewController {
     
     @IBAction func donePressed(sender: AnyObject) {
         /*Save menu item */
-        if let mText = menuTextField.text{
-            
-            coreDataStack.insetNewMenu(mText)
-            
-        }
+        
+        
+        self.view.endEditing(true)
+        getVariables()
+        calculategasmileage()
+        let calculationString = calculation.description
+        //self.Calculation.text = calculationString
+        coreDataStack.insetNewMenu(calculationString)
+        
+        
         disMis()
     }
+    
+    func getVariables(){
+        //get desired string from UITextField convert to int
+        milesDriven = (miles.text as NSString).floatValue
+        gallonsTotal = (gallons.text as NSString).floatValue
+        
+    }
+    
+    
+    func calculategasmileage() -> Float32 {
+        calculation = milesDriven / gallonsTotal
+        println(calculation)
+        return calculation
+        
+    }
+
 
     @IBAction func cancelPressed(sender: AnyObject) {
         disMis()
