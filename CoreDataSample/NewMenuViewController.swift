@@ -39,6 +39,7 @@ class NewMenuViewController: UIViewController {
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+   
     
     @IBAction func donePressed(sender: AnyObject) {
         /*Save menu item */
@@ -53,6 +54,9 @@ class NewMenuViewController: UIViewController {
         
         
         disMis()
+    }
+   override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
     
     func getVariables(){

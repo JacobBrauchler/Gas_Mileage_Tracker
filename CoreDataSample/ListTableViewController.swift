@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 class ListTableViewController: UITableViewController , NSFetchedResultsControllerDelegate{
+    
+    
 
     var fetchedResultsController: NSFetchedResultsController{
         if _fetchedResultsController != nil {
@@ -80,6 +82,7 @@ class ListTableViewController: UITableViewController , NSFetchedResultsControlle
         cell.textLabel?.text = menu.menuText
         return cell
     }
+    
 
 
    /*
@@ -89,8 +92,8 @@ class ListTableViewController: UITableViewController , NSFetchedResultsControlle
         return true
     }
     
-
-    
+*/
+    /*
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
